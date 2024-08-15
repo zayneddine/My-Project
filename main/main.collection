@@ -1,0 +1,178 @@
+name: "main"
+instances {
+  id: "enemy"
+  prototype: "/main/enemy.go"
+  position {
+    x: 74.0
+    y: 197.0
+  }
+  scale3 {
+    x: 1.016
+    y: 1.016
+    z: 1.016
+  }
+}
+instances {
+  id: "enemy1"
+  prototype: "/main/enemy.go"
+  position {
+    x: 169.0
+    y: 197.0
+  }
+  scale3 {
+    x: 1.016
+    y: 1.016
+    z: 1.016
+  }
+}
+instances {
+  id: "enemy2"
+  prototype: "/main/enemy.go"
+  position {
+    x: 260.0
+    y: 197.0
+  }
+  scale3 {
+    x: 1.016
+    y: 1.016
+    z: 1.016
+  }
+}
+instances {
+  id: "enemy3"
+  prototype: "/main/enemy.go"
+  position {
+    x: 350.0
+    y: 197.0
+  }
+  scale3 {
+    x: 1.016
+    y: 1.016
+    z: 1.016
+  }
+}
+instances {
+  id: "enemy4"
+  prototype: "/main/enemy.go"
+  position {
+    x: 445.0
+    y: 197.0
+  }
+  scale3 {
+    x: 1.016
+    y: 1.016
+    z: 1.016
+  }
+}
+instances {
+  id: "enemy5"
+  prototype: "/main/enemy.go"
+  position {
+    x: 534.0
+    y: 196.0
+  }
+  scale3 {
+    x: 1.016
+    y: 1.016
+    z: 1.016
+  }
+}
+instances {
+  id: "enemy6"
+  prototype: "/main/enemy.go"
+  position {
+    x: 622.0
+    y: 195.0
+  }
+  scale3 {
+    x: 1.016
+    y: 1.016
+    z: 1.016
+  }
+}
+instances {
+  id: "enemy7"
+  prototype: "/main/enemy.go"
+  position {
+    x: 703.0
+    y: 195.0
+  }
+  scale3 {
+    x: 1.016
+    y: 1.016
+    z: 1.016
+  }
+}
+instances {
+  id: "enemy8"
+  prototype: "/main/enemy.go"
+  position {
+    x: 788.0
+    y: 195.0
+  }
+  scale3 {
+    x: 1.016
+    y: 1.016
+    z: 1.016
+  }
+}
+instances {
+  id: "enemy9"
+  prototype: "/main/enemy.go"
+  position {
+    x: 873.0
+    y: 194.0
+  }
+  scale3 {
+    x: 1.016
+    y: 1.016
+    z: 1.016
+  }
+}
+instances {
+  id: "enemy10"
+  prototype: "/main/enemy.go"
+  position {
+    x: 963.0
+    y: 194.0
+  }
+  scale3 {
+    x: 1.016
+    y: 1.016
+    z: 1.016
+  }
+}
+scale_along_z: 0
+embedded_instances {
+  id: "player"
+  data: "components {\n"
+  "  id: \"player\"\n"
+  "  component: \"/main/player.script\"\n"
+  "}\n"
+  "components {\n"
+  "  id: \"shot\"\n"
+  "  component: \"/main/shot.sound\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"player\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/atlas.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"factory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/main/bullet.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 77.0
+    y: 29.0
+  }
+}

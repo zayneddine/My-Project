@@ -1,0 +1,54 @@
+script: ""
+fonts {
+  name: "default"
+  font: "/builtins/fonts/default.font"
+}
+textures {
+  name: "atlas"
+  texture: "/assets/atlas.atlas"
+}
+nodes {
+  position {
+    x: 33.0
+    y: 734.0
+  }
+  type: TYPE_BOX
+  texture: "atlas/player"
+  id: "box"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 58.0
+    y: -2.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "x3"
+  font: "default"
+  id: "lives"
+  parent: "box"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 886.0
+    y: -4.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "0"
+  font: "default"
+  id: "score"
+  parent: "box"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

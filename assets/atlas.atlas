@@ -1,0 +1,47 @@
+animations {
+  id: "player"
+  images {
+    image: "/assets/player_ship.png"
+  }
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "enemy"
+  images {
+    image: "/assets/enemy_bomber_1.png"
+  }
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "bullet"
+  images {
+    image: "/assets/rocket.png"
+  }
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "enemy_death"
+  images {
+    image: "/assets/enemy_bomber_1.png"
+  }
+  images {
+    image: "/assets/enemy_bomber_2.png"
+  }
+  images {
+    image: "/assets/enemy_bomber_3.png"
+  }
+  images {
+    image: "/assets/enemy_bomber_4.png"
+  }
+  images {
+    image: "/assets/enemy_bomber_5.png"
+  }
+  images {
+    image: "/assets/enemy_bomber_6.png"
+  }
+  images {
+    image: "/assets/enemy_bomber_7.png"
+  }
+  fps: 12
+}
+extrude_borders: 2
