@@ -1,6 +1,6 @@
 function init(self)
 	msg.post(".", "acquire_input_focus")
-	
+	print("assalamou aalaykom")
 	timer.delay(1, true, function() 
 		sound.play("#shot")
 		factory.create("#factory")
